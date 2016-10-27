@@ -7,28 +7,23 @@
     <title>SS-formCompletion</title>
 </head>
 <body>
-<h1>SS-formCompletion Settings</h1>
-<div>
-    <table class="table-responsive table">
-        <tbody id="rules-table">
-            <tr>
-                <th>#</th>
-                <th>缩写</th>
-                <th>内容</th>
-                <th>操作</th>
-            </tr>
-        </tbody>
+<nav class="nav navbar-default" role="navigation">
+    <div class="container container-fluid">
+        <a class="navbar-brand" href="#">SS-FC</a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a href="#">规则列表</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">新建规则</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="rules-table">
+    <table class="table">
     </table>
 </div>
-<form id="insert-form">
-    <label for="key">缩写:</label>
-    <input type="text" name="key" id="key">
-
-    <label for="value">内容:</label>
-    <input type="text" name="value" id="value">
-
-    <input type="button" value="新建规则" id="submit">
-</form>
 </body>
 <script src="js/options.js"></script>
 <script src="js/bootstrap.min.js"></script>
