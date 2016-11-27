@@ -19,7 +19,7 @@ var obj = {
 function autoComplete() {
     // var input = document.getElementsByTagName('input')[3];
     var originValue = undefined;
-    document.addEventListener('change',function (event) {
+    document.addEventListener('keyup',function (event) {
       // if (event.target.nodeName.toLowerCase() == ('input' || 'textarea')) {
         var input = event.target;
         console.log(input);
@@ -41,8 +41,33 @@ function autoComplete() {
           }
         }
       // }
-
     })
+
+
+    // document.addEventListener('textInput',function (event) {
+    //   // if (event.target.nodeName.toLowerCase() == ('input' || 'textarea')) {
+    //     var input = event.target;
+    //     console.log(input);
+    //     var values = input.value;
+    //     console.log(input.text);
+    //     var start = values.lastIndexOf(':');
+    //     var len = values.length - start -1;
+    //     if (start >= 0 && len > 1 && len < 6) { //定义命令的规则为2-5个英文字符！！！！！！！！！！！
+    //       var start = values.lastIndexOf(':');
+    //       name = values.slice(start+1);
+    //       console.log(name);
+    //       originValue = values.slice(0,start);
+    //
+    //       if (obj.hasOwnProperty(name)) {
+    //           if(!originValue){
+    //               input.value = obj[name];
+    //           }else {
+    //               input.value = originValue + obj[name];
+    //           }
+    //       }
+    //     }
+    //   // }
+    // })
 }
 
 // function autoComplete1() {
